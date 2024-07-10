@@ -1,12 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/cloud5409-429019/container1/container1:latest', '.']
-images:
-- 'us-central1-docker.pkg.dev/cloud5409-429019/container1/container1:latest'
-- name: 'gcr.io/cloud-builders/kubectl'
-  args:
-  - 'set'
-  - 'image'
-  - 'deployment/container1-deployment'
-  - 'container1=us-central1-docker.pkg.dev/cloud5409-429019/container1/container1:latest'
-  - '--namespace=default'
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-central1-docker.pkg.dev/cloud5409-429019/container1/container1:latest']
+
