@@ -5,4 +5,4 @@ steps:
   args: ['push', 'us-central1-docker.pkg.dev/cloud5409-429019/container1/container1:latest']
 
 options:
-  logging:CLOUD_LOGGING_ONLY
+  logging: CLOUD_LOGGING_ONLY
