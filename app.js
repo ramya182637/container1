@@ -2,7 +2,6 @@ const express = require('express');
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
-
 const app = express();
 const PORT = 8080;
 const DATA_DIR = '/ramya_PV_dir'
